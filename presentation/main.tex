@@ -1,0 +1,38 @@
+\documentclass[aspectratio=169,10pt]{beamer}
+
+\usetheme{metropolis}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{../docs/ai-macros}
+
+\title{Paper title (to fill in)}
+\subtitle{Modélisation de systèmes intelligents -- Oral presentation}
+\author{Maksym Dolhov \and Hocine Guia}
+\institute{M2 Informatique VMI, Université Paris Cité}
+\date{02/11/2026}
+
+\begin{document}
+
+\maketitle
+
+% Speaker: TBD
+\input{sections/01-motivation}
+\input{sections/02-related-work}
+\input{sections/03-method}
+\input{sections/04-evaluation}
+\input{sections/05-conclusion-critique}
+\input{sections/06-perspectives}
+\input{sections/07-project-progress}
+
+\begin{frame}[allowframebreaks]{References}
+  \bibliographystyle{plain}
+  \bibliography{../docs/references}
+\end{frame}
+
+\begin{frame}{IAgraphie}
+  \IfFileExists{../docs/iagraphie.tex}{\input{../docs/iagraphie}}{}
+\end{frame}
+
+\end{document}

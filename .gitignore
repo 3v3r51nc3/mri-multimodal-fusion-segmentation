@@ -1,0 +1,47 @@
+# Course material (not ours to redistribute)
+docs/course/
+
+# Data and model artefacts
+project/data/*
+!project/data/README.md
+*.pt
+*.pth
+*.ckpt
+*.nii
+*.nii.gz
+project/results/runs/
+wandb/
+lightning_logs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+
+# LaTeX build output
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.bcf
+*.run.xml
+state-of-the-art/main.pdf
+presentation/main.pdf
+defense/main.pdf
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

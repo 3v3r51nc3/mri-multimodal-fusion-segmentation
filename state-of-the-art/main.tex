@@ -1,0 +1,38 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french,english]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[numbers]{natbib}
+\usepackage[colorlinks=true,allcolors=blue]{hyperref}
+\geometry{margin=2.5cm}
+\usepackage{../docs/ai-macros}
+
+\title{Multimodal Information Fusion for Image Segmentation: State of the Art}
+\author{Maksym Dolhov \and Hocine Guia}
+\date{08/11/2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% TODO
+\end{abstract}
+
+\input{sections/01-introduction}
+\input{sections/02-taxonomy}
+\input{sections/03-methods}
+\input{sections/04-discussion}
+\input{sections/05-conclusion}
+
+\bibliographystyle{plainnat}
+\bibliography{../docs/references}
+
+\section*{IAgraphie}
+\IfFileExists{../docs/iagraphie.tex}{\input{../docs/iagraphie}}{}
+
+\end{document}
