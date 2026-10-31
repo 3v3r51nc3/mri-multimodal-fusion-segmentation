@@ -5,34 +5,113 @@
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{../docs/ai-macros}
+% AI-generated text reused as is goes between slashes (course charter)
+\newcommand{\aitext}[1]{/#1/}
 
-\title{Paper title (to fill in)}
-\subtitle{Modélisation de systèmes intelligents -- Oral presentation}
+\title{Multi-modal hypergraph contrastive learning for medical image segmentation}
+\subtitle{Paper presentation -- Modélisation de systèmes intelligents}
 \author{Maksym Dolhov \and Hocine Guia}
 \institute{M2 Informatique VMI, Université Paris Cité}
 \date{02/11/2026}
+
+% Time budget: 15 min total. Speakers: TBD.
 
 \begin{document}
 
 \maketitle
 
-% Speaker: TBD
-\input{sections/01-motivation}
-\input{sections/02-related-work}
-\input{sections/03-method}
-\input{sections/04-evaluation}
-\input{sections/05-conclusion-critique}
-\input{sections/06-perspectives}
-\input{sections/07-project-progress}
+% ~0.5 min | Speaker: TBD
+\begin{frame}{Outline}
+  % TODO: list the 6 parts of the talk
+\end{frame}
 
+% ====================================================================
+\section{Motivation}
+% ~2 min | Speaker: TBD
+
+\begin{frame}{Context}
+  % TODO: multi-modal medical segmentation, why combine modalities
+\end{frame}
+
+\begin{frame}{Problem and goal}
+  % TODO: few labels, many unlabeled images, self-supervised learning
+\end{frame}
+
+% ====================================================================
+\section{Related work}
+% ~1.5 min | Speaker: TBD
+
+\begin{frame}{Seq SSL vs Joint SSL}
+  % TODO: how each works, limits of each (forgetting / conflicts), the gap the paper targets
+  % TODO: figure placeholder (cite the paper if reused)
+  % \includegraphics[width=\linewidth]{figures/...}
+\end{frame}
+
+% ====================================================================
+\section{Method}
+% ~4.5 min | Speaker: TBD
+
+\begin{frame}{Overview}
+  % TODO: the two stages + downstream segmentation, one schema
+\end{frame}
+
+\begin{frame}{Stage 1: pretraining}
+  % TODO: CycleGAN, cross-modal translation, what it gives (encoder, synthesized images)
+\end{frame}
+
+\begin{frame}{Stage 2: fine-tuning}
+  % TODO: teacher (hypergraph + contrastive), student (MLP), distillation, pseudo-labels
+\end{frame}
+
+\begin{frame}{Segmentation}
+  % TODO: U-Net, initialisation, pseudo-labels as supervision
+\end{frame}
+
+% ====================================================================
+\section{Evaluation}
+% ~2.5 min | Speaker: TBD
+
+\begin{frame}{Setup and results}
+  % TODO: datasets, % of labels, metrics, comparison, main numbers
+\end{frame}
+
+\begin{frame}{Ablation}
+  % TODO: which component matters
+\end{frame}
+
+% ====================================================================
+\section{Conclusion and critique}
+% ~2 min | Speaker: TBD
+
+\begin{frame}{Conclusion and critique}
+  % TODO: your own judgement (not a summary)
+\end{frame}
+
+\begin{frame}{Perspectives}
+  % TODO: improvements to consider
+\end{frame}
+
+% ====================================================================
+\section{Project progress}
+% ~2 min | Speaker: TBD
+
+\begin{frame}{Project progress -- Student 1}
+  % TODO
+\end{frame}
+
+\begin{frame}{Project progress -- Student 2}
+  % TODO
+\end{frame}
+
+% ====================================================================
 \begin{frame}[allowframebreaks]{References}
   \bibliographystyle{plain}
-  \bibliography{../docs/references}
+  \nocite{jing2025hycon}
+  \bibliography{references}
 \end{frame}
 
 \begin{frame}{IAgraphie}
-  \IfFileExists{../docs/iagraphie.tex}{\input{../docs/iagraphie}}{}
+  \IfFileExists{iagraphie.tex}{\input{iagraphie}}{}
 \end{frame}
 
 \end{document}

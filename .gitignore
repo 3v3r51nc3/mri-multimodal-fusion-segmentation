@@ -45,3 +45,6 @@ defense/main.pdf
 .DS_Store
 .idea/
 .vscode/
+
+# Downloaded papers (publisher copyright)
+docs/papers/
